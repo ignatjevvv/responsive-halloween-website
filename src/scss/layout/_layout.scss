@@ -1,8 +1,8 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1024px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    max-width: 968px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
 }
 
 .grid {
@@ -14,7 +14,8 @@
 
     &__title {
         font-size: var(--h2-font-size);
-        margin-bottom: 1rem;
+        margin-bottom: var(--mb-2);
+        text-align: center;
 
         & span {
             color: var(--second-color);
