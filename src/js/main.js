@@ -1,7 +1,8 @@
 import '../scss/style.scss';
 // import { clickBtn } from '../js/modules/test';
-import { showMenu } from './modules/menu';
+import { showMenu, removeMenu } from './modules/menu';
 
 document.addEventListener('DOMContentLoaded', () => {
   showMenu();
+  removeMenu();
 });
