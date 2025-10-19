@@ -10,4 +10,29 @@
     &:hover {
         background-color: var(--first-color-alt);
     }
+
+    &__icon {
+        font-size: 1.25rem;
+    }
+
+    &--ghost {
+        border: 2px solid;
+        background-color: transparent;
+        border-radius: 3rem;
+        padding: .75rem 1.5rem;
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    &--link {
+        color: var(--title-color);
+    }
+
+    &--flex {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
 }
