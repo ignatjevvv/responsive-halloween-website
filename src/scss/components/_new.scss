@@ -2,7 +2,7 @@
     &__container {
         padding-top: 1rem;
     }
-    
+
     &__img {
         width: 120px;
         margin-bottom: var(--mb-0-5);
@@ -12,7 +12,7 @@
     &__content {
         position: relative;
         background: var(--container-color);
-        width: 242px;
+        width: 230px;
         padding: 2rem 0 1.5rem 0;
         border-radius: .75rem;
         text-align: center;
@@ -78,5 +78,10 @@
 
     &__content:hover &__button {
         right: 0%;
+    }
+
+    .swiper-slide {
+        width: 230px !important;
+        /* крайняя мера, если стили Swiper переносят свою width */
     }
 }

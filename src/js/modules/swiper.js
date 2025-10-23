@@ -13,3 +13,13 @@ export const homeSwiper = new Swiper('.home-swiper', {
     clickable: true,
   },
 });
+
+// New swiper
+
+// init Swiper:
+export const newSwiper = new Swiper('.new-swiper', {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 16,
+  loop: 'true',
+});
