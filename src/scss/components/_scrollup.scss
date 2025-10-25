@@ -2,13 +2,13 @@
     position: fixed;
     background: var(--container-color);
     right: 1rem;
-    bottom: 5rem;
+    bottom: -20%;
     display: inline-flex;
     padding: .3rem;
     border-radius: .25rem;
     z-index: var(--z-tooltip);
     opacity: .8;
-    transition: .4;
+    transition: .4s;
 
     &__icon {
         font-size: 1.25rem;
@@ -19,4 +19,8 @@
         background: var(--container-color);
         opacity: 1;
     }
+}
+
+.show-scroll {
+    bottom: 3rem;
 }

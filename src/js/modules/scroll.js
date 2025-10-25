@@ -8,7 +8,7 @@ export function scrollActive() {
 
     sections.forEach(section => {
       const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 56 ;
+      const sectionTop = section.offsetTop - 56;
       let sectionId = section.getAttribute('id');
 
       console.log(
