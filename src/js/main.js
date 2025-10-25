@@ -5,6 +5,7 @@ import { scrollActive } from './modules/scroll';
 import { scrollHeader } from './modules/header';
 import { scrollUp } from './modules/scrollup';
 import { homeSwiper, newSwiper } from './modules/swiper';
+import { scrollReveal } from './modules/animation';
 
 document.addEventListener('DOMContentLoaded', () => {
   showMenu();
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   removeMenu();
   scrollHeader();
   scrollUp();
+  scrollReveal();
 });
