@@ -1,3 +1,5 @@
+@use '../config/variables';
+
 /*================ BREACKPOINTS ================*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -168,3 +170,138 @@
 }
 
 /* For large devices */
+
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        &__title {
+            font-size: var(--h1-font-size);
+            margin-bottom: 3rem;
+        }
+    }
+
+    .home {
+        &__content {
+            padding-top: 9rem;
+            gap: 3rem;
+        }
+
+        &__group {
+            padding-top: 0;
+        }
+
+        &__img {
+            height: 400px;
+            transform: translateY(-3rem);
+        }
+
+        &__indicator {
+            top: initial;
+            right: initial;
+            bottom: 15%;
+            left: 45%;
+
+            &:after {
+                top: 0;
+                height: 75px;
+            }
+        }
+
+        &__details {
+            &-img {
+                bottom: 0;
+                right: 58%;
+            }
+        }
+
+        &__title {
+            margin-bottom: var(--mb-1-5);
+        }
+
+        &__description {
+            margin-bottom: var(--mb-2-5);
+            padding-right: 2rem;
+        }
+    }
+
+    .category {
+        &__container {
+            column-gap: 8rem;
+        }
+
+        &__img {
+            width: 200px;
+        }
+    }
+
+    .about {
+        &__img {
+            width: 350px;
+        }
+
+        &__description {
+            padding-right: 2rem;
+        }
+    }
+
+    .trick {
+        &__container {
+            gap: 3.5rem;
+        }
+
+        &__content {
+            border-radius: 1.5rem;
+        }
+
+        &__img {
+            width: 110px;
+        }
+
+        &__title {
+            font-size: var(--h3-font-size);
+        }
+    }
+
+    .discount {
+        &__container {
+            column-gap: 7rem;
+        }
+    }
+
+    .new {
+        &__content {
+            width: 310px;
+            border-radius: 1rem;
+            padding: 2rem 0;
+        }
+
+        .swiper-slide {
+            width: 310px !important;
+            /* крайняя мера, если стили Swiper переносят свою width */
+        }
+
+        &__img {
+            width: 150px;
+        }
+
+        &__img,
+        &__subtitle {
+            margin-bottom: var(--mb-1);
+        }
+
+        &__title {
+            font-size: var(--h3-font-size);
+        }
+    }
+
+    .footer {
+        &__copy {
+            margin-top: 6rem;
+        }
+    }
+
+}
